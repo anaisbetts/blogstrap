@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>{{ page.title }}</title>
+
+  <meta name="author" content="TODO: John Doe" />
+  <meta name="description" content="TODO: A witty description" />
+
+  <link rel="alternate" type="application/rss+xml" href="TODO: http://feeds.feedburner.com/Delete_If_You_Use_Feedburner" />
+  <link rel="stylesheet" href="/css/compiled/base.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/plugins/pygments.css" type="text/css" />
+
+  <link media="only screen and (max-device-width: 480px)" href="/css/compiled/iphone.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (device-width: 768px)" href="/css/compiled/iphone.css" type="text/css" rel="stylesheet" />
+
+  <link rel="apple-touch-icon" href="/TODO-apple-touch-icon.png" />
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/compiled/application.js"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+      {{ page.script }}
+    });
+  </script>
+</head>
+
+<body>
+  <section class="sidebar">
+  </section>
+
+  {{ content }}
+
+  <!-- TODO: This would be a good place to put a Gaug.es tracker -->
+</body>
+
+</html>

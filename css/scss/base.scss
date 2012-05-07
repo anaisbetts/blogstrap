@@ -1,0 +1,171 @@
+
+// TODO: I've picked these ridiculous looking fonts to emphasize that you need
+// to do the design yourself
+
+$serif: "Times New Roman", serif;
+$sans: "Arial", sans-serif;
+
+* {
+}
+
+body {
+  font-family: $serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $blue;
+}
+
+.sidebar {
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  width: 80px;
+  font-family: $sans;
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    padding: 0 3px;
+    border: 0;
+  }
+
+  .sections {
+    margin: 25px 0 0 -15px;
+
+    a {
+      background-color: #000;
+      padding: 3px 5px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 12px;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.content {
+  margin-left: 110px;
+  width: 650px;
+  margin-bottom: 50px;
+
+  // h1-h4
+  @each $number in 1,2,3,4 {
+    h#{$number} {
+      font-family: $serif;
+      font-weight: 400;
+      border-bottom: 1px solid #ccc;
+    }
+
+    h#{$number} a {
+      text-decoration: none;
+    }
+  }
+
+  h1 {
+    font-size: 36px;
+    margin: 18px 0 5px 0;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1.2em;
+    line-height: 1.7em;
+
+    code {
+      font-size: 12px;
+      border: 1px solid;
+      border-radius: 3px;
+      padding: 2px 3px;
+    }
+  }
+
+  img {
+    padding: 3px;
+    max-width: 100%;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    margin: 2em 1em;
+  }
+
+  blockquote {
+    font-style: italic;
+    font-size: 14px;
+    padding: .25em 1em;
+    margin: 1em 1em 0 1em;
+
+    cite:before {
+      content: '— ';
+    }
+
+    cite {
+      display: block;
+      margin-top: .5em;
+      text-align: right;
+      font-style: normal;
+    }
+  }
+
+  .listing {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-family: $sans;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      font-size: 13px;
+      list-style: none;
+      padding: 5px 3px;
+      margin: 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    li span {
+      float: right;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
